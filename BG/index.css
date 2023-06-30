@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 80%;
+    background-color: ghostwhite;
+    margin: auto;
+    padding: 5%;
+}
+
+.colorCircle{
+    border: 1px solid #000;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+
+    box-shadow: 3px 3px 4px #2C2C34;
+} 
+
+.action{
+    margin: 20px;
+}
+button{
+    cursor: pointer;
+}
+.colorBtn{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.colorBtn div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background-color: #b18fcf; */
+    box-shadow: 2px 2px 3px #000;
+
+    cursor: pointer;
+    margin: 0 10px;
+    
+}
+.lavenderWeb{
+    background-color: #D8D8F6;
+}
+.AfricanViolet{
+    background-color: #B18FCF;
+}
+.HeliotropeGray{
+    background-color: #978897;
+}
+.DarLiver{
+    background-color: #494850;
+}
+
+.RaisinBlack{
+    background-color: #2C2C34;
+}
+.header{
+    /* color:gold; */
+}

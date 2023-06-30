@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHOTO GLARY</title>
+
+    <style>
+        body{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+
+            max-width: 600px;
+            box-shadow: 2px 3px 4px #aaa;
+            margin: 0 auto;
+            padding: 20px;
+
+        }
+        .group li{
+            list-style: none;
+            border-radius: 20px;
+            
+        }
+        .group li img{
+            box-shadow: 2px 2px 3px #999;
+            border-radius: 20px;
+        }
+        .group{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5em;;
+          
+           
+            
+        }
+        li{
+            grid-template-columns: 12px 12px 12px;
+            grid-template-rows: 12px 12px 12px;
+        }
+        .hidden{
+            display: none;
+        }
+       
+    </style>
+
+
+
+
+</head>
+
+
+<body>
+
+    
+
+    <article id="art">
+        <h2>The art</h2>
+        <p>This year's art pieces will inspire thought, conversation, imagination ...</p>
+        <div class="pixGrid group" >
+            <ul class="group">
+                <!-- <li><img src="https://picsum.photos/id/684/600/400" alt=""></li> -->
+                <li><img src="./img/684-150x150.jpg" alt="snow"></li>
+                <li><img src="./img/685-150x150.jpg" alt="on the top"></li>
+                <li><img src="./img/544-150x150.jpg" alt="sunset"></li>
+                <li><img src="./img/214-150x150.jpg" alt="city"></li>
+                <li><img src="./img/284-150x150.jpg" alt="shop"></li>
+                <li><img src="./img//384-150x150.jpg" alt="water"></li>
+                <li><img src="./img/655-150x150.jpg" alt="van"></li>
+                <li><img src="./img/604-150x150.jpg" alt="style"></li>
+                <li><img src="./img/64-150x150.jpg" alt="beauty"></li>
+                <li><img src="./img/804-150x150.jpg" alt="sleepy"></li>
+                <li><img src="./img/904-150x150.jpg" alt="having func"></li>
+                <li><img src="./img/104-150x150.jpg" alt="craft"></li>
+
+
+            </ul>
+            
+            <script src="./index.js"></script>
+        </div>
+    </article>
+
+   
+</body>
+
+</html>

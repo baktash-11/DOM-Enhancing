@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Target Vs CurrentTarget</title>
+
+    <style>
+        main{
+            background-color: #A8C7BB;
+            height: 150px;
+            width: 70%;
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+            font-size: x-large;
+        }
+        p{
+            background-color: #F092DD;
+            width: 70%;
+            height: 70px;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .gold{
+            color:gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>event.target versus even.currentTarget </h1>
+    <main>
+        this tex is inside &lt;main&gt; element.
+        <p id="para">this tex is inside &lt;p&gt; element.</p>
+    </main>
+    <script>
+        document.querySelector('main').addEventListener('click', clicked)
+        document.querySelector('p').addEventListener('click', clicked)
+        let pNode = document.querySelector('p'); 
+
+        function clicked(e){
+            console.log(`attached to ${e.target.tagName}  currently is ${e.currentTarget.tagName}`);
+            pNode.classList.add('gold')
+        }
+
+      
+        pNode.classList.add('new_para');
+        console.log(pNode.getAttribute('class'));
+        
+    </script>
+</body>
+</html>
