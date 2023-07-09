@@ -116,3 +116,25 @@ function centerImage(img){
 }
 
 
+let myArray = ['hello', 'my', 'name', 'is', 'Baktash']; 
+let originalString = "some beautiful pictures in the world"; 
+let originalStr = "Hello, World!   ";
+
+//replace(), subString(), trim(), join() and split() functions in JS
+console.log(myArray.join('****')); //join use to join an array in single string
+console.log (originalStr.trim()); //remove any space at the beginning and end of a string 
+console.log(originalStr.substring(0, 5) + "-Tom");//remove a part of string 
+console.log(originalString.split(' '));// convert an string to an array 
+console.log( originalString.split('e'));
+
+
+// aspect ratio 
+
+function getAspectRatio(width, height) {
+    let ratio = width / height;
+    //  (( ratio - 4 / 3 ) <( ratio - 16 / 9 ) ) ? '4:3' : '16:9';
+    return ratio
+}
+
+
+console.log(getAspectRatio(1000, 600));
