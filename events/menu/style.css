@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+
+
+#bar1 , #bar2 ,#bar3{
+    height: 4px;
+    width: 50px;
+    background-color: #f00;
+    margin-left:50px;
+    margin-top:14px;
+
+}
+
+.icon {
+    margin-top: 40px;
+    display: block;
+}
+
+#bar1 .change{
+    transform: translate(0, 18px) rotate(-45deg);
+    background-color: green;
+}
+.change #bar2{
+    opacity: 0;
+}
+#bar3 .change{
+    transform: translate(0, -18px) rotate(45deg);
+    background-color: green;
+    
+}
+
+

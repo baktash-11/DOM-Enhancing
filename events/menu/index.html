@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sandwich Menu</title>
+</head>
+<body>
+    <nav>
+        <nav class="icon" onclick="change()">
+            <div id="bar1"></div>
+            <div  id="bar2"></div>
+            <div id="bar3"></div>
+        </nav>
+    </nav>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+
+    <script>
+        let icon = document.querySelector('.icon');
+        let bar1 = document.querySelector('#bar1')
+        let bar3 = document.querySelector('#bar3')
+        let bar2 = document.querySelector('#bar2')
+        console.log(bar1.classList)
+
+        function  change(e){
+            bar1.classList.add('change');
+            console.log(bar1.classList);
+           
+        };
+    </script>
+</body>
+</html>
